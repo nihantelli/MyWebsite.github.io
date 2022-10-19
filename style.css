@@ -135,19 +135,22 @@ input:checked + .slider::before {
   color: var(--primary-variant);
 }
 .navbar button {
-  color: var(--main-color);
+  background-color: var(--main-color);
+
+  margin-top: 30px;
 }
 /*HOME */
 #home {
-  height: 700px;
+  height:auto;
   background-color: var(--on-background);
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
 }
 #home .img-part .photo {
-  height: 500px;
-  margin-top: 90px;
+  height: 700px;
+  width: 500px;
+ padding: 40px 0;
 }
 #home .home-info {
   display: flex;
@@ -253,7 +256,7 @@ input:checked + .slider::before {
   color: var(--on-text-dark);
 
   padding: 5px;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -405,17 +408,25 @@ textarea {
 
 /* RESPONSIVE DESIGN FOR ALL DEVICES */
 @media (max-width: 480px) {
+  .cv-button {
+    margin-left: 15px;
+  }
   .nav-item {
     padding-top: 10px;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
+  }
+  .navbar button {
+    margin-top: 30px;
+  }
+  .navbar .navbar-brand {
+    display: none;
   }
   hr {
     display: none;
   }
   .theme-switch-wrapper {
-    right: 50px;
-    top: 20px;
+    right: 90px;
+    top: 40px;
   }
   #home {
     position: relative;
@@ -427,11 +438,9 @@ textarea {
     text-align: center;
   }
   #home .img-part .photo {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
+  margin-top: 0;
     height: 300px;
-    width: 270px;
+    width: 200px;
   }
   #home .home-info .home-name {
     font-size: 23px;
@@ -441,7 +450,7 @@ textarea {
   }
   #home .home-info .home-desc {
     font-size: 15px;
-    max-width: 250px;
+    max-width: 200px;
   }
   .aboutme {
     height: auto;
@@ -454,16 +463,16 @@ textarea {
   }
 
   .aboutme .about-bottom {
-    margin: 0px 30px;
+    margin: 5px 0px;
   }
   .aboutme .about-bottom .about-content {
     font-size: 15px;
     letter-spacing: 1px;
   }
-  .aboutme .about-bottom .a-tit {
+  /* .aboutme .about-bottom .a-tit {
     font-size: 25px;
     margin-top: 20px;
-  }
+  } */
 
   .aboutme .about-bottom .about-info div {
     margin-bottom: 8px;
@@ -475,6 +484,7 @@ textarea {
     padding-left: 20px;
     margin-top: 40px;
     width: max-content;
+    letter-spacing: 0px;
   }
   .aboutme .about-bottom .about-info p {
     font-size: 15px;
@@ -485,7 +495,7 @@ textarea {
   }
   .aboutme .about-bottom .about-info h4 {
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
   }
   /* SERVICES*/
 
@@ -497,7 +507,7 @@ textarea {
   }
 
   .card {
-    margin: 10px 0px;
+    margin: 15px 0px;
   }
   .card img {
     height: 150px;
@@ -512,14 +522,14 @@ textarea {
   }
   .contact .contact-bottom i {
     font-size: 30px;
-    margin: 20px 10px 0px 10px;
+    margin: 20px 5px 0px 5px;
   }
   .form-group {
     width: auto;
   }
   input,
   textarea {
-    width: 250px;
+    width: 220px;
   }
   .submit {
     padding: 5px;
@@ -529,14 +539,20 @@ textarea {
   .nav-item {
     padding-top: 10px;
     font-size: 20px;
-    text-align: center;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+  .navbar button {
+    margin-top: 30px;
   }
   hr {
     display: none;
   }
   .theme-switch-wrapper {
     right: 90px;
-    top: 20px;
+    top: 40px;
   }
   #home {
     position: relative;
@@ -548,12 +564,11 @@ textarea {
     text-align: center;
   }
   #home .img-part .photo {
-    position: absolute;
-    bottom: 30px;
-    left: 50px;
-    height: 300px;
-    width: 270px;
+    margin-top: 0;
+    height: 350px;
+    width: 250px;
   }
+
   #home .home-info .home-name {
     font-size: 25px;
   }
@@ -652,6 +667,7 @@ textarea {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   /* NAVBAR */
+ 
   .theme-switch-wrapper {
     right: 90px;
     top: 80px;
@@ -769,11 +785,13 @@ textarea {
   }
 }
 @media (min-width: 1025px) and (max-width: 1200px) {
+   
   #home {
     align-items: center;
   }
   #home .img-part .photo {
     height: 400px;
+    width: 300px;
   }
   #home .home-info {
     margin-top: 50px;
