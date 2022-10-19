@@ -1,2 +1,1 @@
-# MyWebsite.github.io
-MyWebsite
+https://nihantelli.github.io/MyWebsite.github.io/
