@@ -12,14 +12,14 @@ const image7 = document.getElementById("img7");
 const image8 = document.getElementById("img8");
 // Dark or Light Images
 function imageMode(color) {
-  image1.src = `undraw_organizing_projects_${color}.svg`;
-  image2.src = `undraw_design_feedback_${color}.svg`;
-  image3.src = `undraw_work_time_${color}.svg`;
-  image4.src = `undraw_code_typing_${color}.svg`;
-  image5.src = `undraw_responsive_${color}.svg`;
-  image6.src = `undraw_complete_design_${color}.svg`;
-  image7.src = `undraw_static_assets_${color}.svg`;
-  image8.src = `undraw_react_${color}.svg`;
+  image1.src = `./img/undraw_organizing_projects_${color}.svg`;
+  image2.src = `./img/undraw_design_feedback_${color}.svg`;
+  image3.src = `./img/undraw_work_time_${color}.svg`;
+  image4.src = `./img/undraw_code_typing_${color}.svg`;
+  image5.src = `./img/undraw_responsive_${color}.svg`;
+  image6.src = `./img/undraw_complete_design_${color}.svg`;
+  image7.src = `./img/undraw_static_assets_${color}.svg`;
+  image8.src = `./img/undraw_react_${color}.svg`;
 }
 
 function toggleDarkLightMode(isDark) {
